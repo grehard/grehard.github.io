@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Grehard | Web Developer</title>
   <meta name="description" content="Portfolio of Grehard, a web developer. Twelve complete web apps you can watch in one minute and try right on this page.">
   <meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
@@ -15,7 +15,7 @@
   <a class="skip" href="#work">Skip to projects</a>
   <header class="top">
     <div class="wrap top-row">
-      <a class="brand" href="#top">Grehard</a>
+      <a class="brand" href="#top"><span class="mark" aria-hidden="true">G</span>Grehard</a>
       <nav aria-label="Main">
         <a href="#work">Work</a>
         <a href="https://github.com/grehard" target="_blank" rel="noopener">GitHub</a>
@@ -24,68 +24,94 @@
   </header>
 
   <main id="top">
-    <section class="intro wrap">
-      <h1>Grehard</h1>
-      <p class="role">Web developer</p>
-      <p class="lede">I build complete web apps. Here are twelve of them. Watch a one-minute overview of any project, then press Try it and use every feature right here, with no sign-up.</p>
-      <!-- index:start -->
-      <ol class="index">
-        <li><a href="#gridlens"><strong>Gridlens</strong><span>Data tools</span></a></li>
-        <li><a href="#driftboard"><strong>Driftboard</strong><span>Design tool</span></a></li>
-        <li><a href="#coinpath"><strong>Coinpath</strong><span>Finance</span></a></li>
-        <li><a href="#stockroom"><strong>Stockroom</strong><span>Retail</span></a></li>
-        <li><a href="#billcraft"><strong>Billcraft</strong><span>Finance</span></a></li>
-        <li><a href="#laneboard"><strong>Laneboard</strong><span>Productivity</span></a></li>
-        <li><a href="#formloom"><strong>Formloom</strong><span>Forms</span></a></li>
-        <li><a href="#marginalia"><strong>Marginalia</strong><span>Writing</span></a></li>
-        <li><a href="#recallo"><strong>Recallo</strong><span>Education</span></a></li>
-        <li><a href="#mise"><strong>Mise</strong><span>Home cooking</span></a></li>
-        <li><a href="#hourglass"><strong>Hourglass</strong><span>Productivity</span></a></li>
-        <li><a href="#rhythm"><strong>Rhythm</strong><span>Productivity</span></a></li>
-      </ol>
-      <!-- index:end -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Web developer</p>
+          <h1>Grehard</h1>
+          <p class="lede">I build complete web apps. Here are twelve of them. Watch a one-minute overview of any project, then press Try it and use every feature right here, with no sign-up.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#work">See the work</a>
+            <a class="btn-ghost" href="https://github.com/grehard" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>GitHub profile</a>
+          </div>
+        </div>
+        <dl class="stats">
+          <div><dt>Working apps</dt><dd>12</dd></div>
+          <div><dt>Automated tests</dt><dd>339</dd></div>
+          <div><dt>Sign-ups needed</dt><dd>0</dd></div>
+        </dl>
+      </div>
     </section>
 
-    <section id="work" class="work wrap" aria-label="Projects">
+    <div class="wrap" id="work">
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <p>Each project has a short overview and opens on this page, ready to use with sample data.</p>
+      </div>
+      <!-- index:start -->
+      <ol class="index">
+        <li style="--accent:#1f4fcc"><a href="#gridlens"><span class="dot"></span><strong>Gridlens</strong><span>Data tools</span></a></li>
+        <li style="--accent:#e8401c"><a href="#driftboard"><span class="dot"></span><strong>Driftboard</strong><span>Design tool</span></a></li>
+        <li style="--accent:#0e5a3c"><a href="#coinpath"><span class="dot"></span><strong>Coinpath</strong><span>Finance</span></a></li>
+        <li style="--accent:#C8420B"><a href="#stockroom"><span class="dot"></span><strong>Stockroom</strong><span>Retail</span></a></li>
+        <li style="--accent:#0f5e5b"><a href="#billcraft"><span class="dot"></span><strong>Billcraft</strong><span>Finance</span></a></li>
+        <li style="--accent:#1767e5"><a href="#laneboard"><span class="dot"></span><strong>Laneboard</strong><span>Productivity</span></a></li>
+        <li style="--accent:#1c5a45"><a href="#formloom"><span class="dot"></span><strong>Formloom</strong><span>Forms</span></a></li>
+        <li style="--accent:#a5402d"><a href="#marginalia"><span class="dot"></span><strong>Marginalia</strong><span>Writing</span></a></li>
+        <li style="--accent:#0b7285"><a href="#recallo"><span class="dot"></span><strong>Recallo</strong><span>Education</span></a></li>
+        <li style="--accent:#b23a26"><a href="#mise"><span class="dot"></span><strong>Mise</strong><span>Home cooking</span></a></li>
+        <li style="--accent:#C2470A"><a href="#hourglass"><span class="dot"></span><strong>Hourglass</strong><span>Productivity</span></a></li>
+        <li style="--accent:#E8A317"><a href="#rhythm"><span class="dot"></span><strong>Rhythm</strong><span>Productivity</span></a></li>
+      </ol>
+      <!-- index:end -->
+    </div>
+
+    <section class="work wrap" aria-label="Projects">
       <!-- projects:start -->
       <article class="project" id="gridlens" style="--accent:#1f4fcc">
-        <div class="player">
-          <video preload="none" playsinline poster="assets/posters/gridlens.jpg" aria-label="One-minute overview of Gridlens, with on-screen captions">
-            <source src="assets/videos/gridlens.mp4" type="video/mp4">
-          </video>
-          <button type="button" class="play" aria-label="Play the one-minute overview of Gridlens">
-            <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview, 1:00</span>
-          </button>
+        <div class="frame">
+          <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i><span>Gridlens</span><b>1:00</b></div>
+          <div class="player">
+            <video preload="none" playsinline poster="assets/posters/gridlens.jpg" aria-label="One-minute overview of Gridlens, with on-screen captions">
+              <source src="assets/videos/gridlens.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="play" aria-label="Play the one-minute overview of Gridlens">
+              <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview</span>
+            </button>
+          </div>
         </div>
         <div class="info">
-          <p class="meta"><span class="dot"></span>Data tools</p>
-          <h2>Gridlens</h2>
+          <p class="meta"><span class="dot"></span>Data tools<span class="num">01</span></p>
+          <h3>Gridlens</h3>
           <p class="desc">For analysts, founders and anyone handed a CSV they cannot send to a third-party service. It profiles, filters, pivots and charts the file entirely inside the browser, with no spreadsheet and no upload.</p>
           <ul class="scope">
             <li>CSV parsing and type inference</li>
             <li>Profile, filter, pivot and chart</li>
             <li>Computed columns and saved views</li>
           </ul>
-          <p class="stack">JavaScript, Canvas, SVG, Web Workers, localStorage</p>
+          <ul class="stack" aria-label="Built with"><li>JavaScript</li><li>Canvas</li><li>SVG</li><li>Web Workers</li><li>localStorage</li></ul>
           <div class="actions">
-            <a class="btn" href="projects/gridlens/index.html" data-try="gridlens" data-name="Gridlens" data-accent="#1f4fcc">Try it</a>
-            <a class="link-quiet" href="https://github.com/grehard/gridlens" target="_blank" rel="noopener">Source on GitHub</a>
+            <a class="btn" href="projects/gridlens/index.html" data-try="gridlens" data-name="Gridlens" data-accent="#1f4fcc">Try it<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="btn-ghost" href="https://github.com/grehard/gridlens" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Source</a>
           </div>
         </div>
       </article>
 
       <article class="project" id="driftboard" style="--accent:#e8401c">
-        <div class="player">
-          <video preload="none" playsinline poster="assets/posters/driftboard.jpg" aria-label="One-minute overview of Driftboard, with on-screen captions">
-            <source src="assets/videos/driftboard.mp4" type="video/mp4">
-          </video>
-          <button type="button" class="play" aria-label="Play the one-minute overview of Driftboard">
-            <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview, 1:00</span>
-          </button>
+        <div class="frame">
+          <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i><span>Driftboard</span><b>1:00</b></div>
+          <div class="player">
+            <video preload="none" playsinline poster="assets/posters/driftboard.jpg" aria-label="One-minute overview of Driftboard, with on-screen captions">
+              <source src="assets/videos/driftboard.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="play" aria-label="Play the one-minute overview of Driftboard">
+              <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview</span>
+            </button>
+          </div>
         </div>
         <div class="info">
-          <p class="meta"><span class="dot"></span>Design tool</p>
-          <h2>Driftboard</h2>
+          <p class="meta"><span class="dot"></span>Design tool<span class="num">02</span></p>
+          <h3>Driftboard</h3>
           <p class="desc">For engineers and designers who sketch systems and screens and need the result to stay tidy when it changes. Connectors stay attached as shapes move, snapping keeps layouts aligned, and boards export to PNG, SVG or JSON with no account or server.</p>
           <ul class="scope">
             <li>Infinite canvas with zoom to cursor and pinch</li>
@@ -93,26 +119,29 @@
             <li>Snapping, groups, layers and full undo</li>
             <li>PNG, SVG and JSON export of named boards</li>
           </ul>
-          <p class="stack">JavaScript, Canvas 2D, Pointer Events, SVG export, localStorage</p>
+          <ul class="stack" aria-label="Built with"><li>JavaScript</li><li>Canvas 2D</li><li>Pointer Events</li><li>SVG export</li><li>localStorage</li></ul>
           <div class="actions">
-            <a class="btn" href="projects/driftboard/index.html" data-try="driftboard" data-name="Driftboard" data-accent="#e8401c">Try it</a>
-            <a class="link-quiet" href="https://github.com/grehard/driftboard" target="_blank" rel="noopener">Source on GitHub</a>
+            <a class="btn" href="projects/driftboard/index.html" data-try="driftboard" data-name="Driftboard" data-accent="#e8401c">Try it<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="btn-ghost" href="https://github.com/grehard/driftboard" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Source</a>
           </div>
         </div>
       </article>
 
       <article class="project" id="coinpath" style="--accent:#0e5a3c">
-        <div class="player">
-          <video preload="none" playsinline poster="assets/posters/coinpath.jpg" aria-label="One-minute overview of Coinpath, with on-screen captions">
-            <source src="assets/videos/coinpath.mp4" type="video/mp4">
-          </video>
-          <button type="button" class="play" aria-label="Play the one-minute overview of Coinpath">
-            <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview, 1:00</span>
-          </button>
+        <div class="frame">
+          <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i><span>Coinpath</span><b>1:00</b></div>
+          <div class="player">
+            <video preload="none" playsinline poster="assets/posters/coinpath.jpg" aria-label="One-minute overview of Coinpath, with on-screen captions">
+              <source src="assets/videos/coinpath.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="play" aria-label="Play the one-minute overview of Coinpath">
+              <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview</span>
+            </button>
+          </div>
         </div>
         <div class="info">
-          <p class="meta"><span class="dot"></span>Finance</p>
-          <h2>Coinpath</h2>
+          <p class="meta"><span class="dot"></span>Finance<span class="num">03</span></p>
+          <h3>Coinpath</h3>
           <p class="desc">Coinpath is for people who want to see where their money goes and stay within a monthly budget. It keeps accounts, transactions, budgets and recurring bills in one place, in the browser, with no sign-up.</p>
           <ul class="scope">
             <li>Accounts, transfers and running balances</li>
@@ -120,78 +149,87 @@
             <li>Recurring transactions with catch-up</li>
             <li>CSV import with duplicate detection</li>
           </ul>
-          <p class="stack">JavaScript, SVG, HTML, CSS, localStorage</p>
+          <ul class="stack" aria-label="Built with"><li>JavaScript</li><li>SVG</li><li>HTML</li><li>CSS</li><li>localStorage</li></ul>
           <div class="actions">
-            <a class="btn" href="projects/coinpath/index.html" data-try="coinpath" data-name="Coinpath" data-accent="#0e5a3c">Try it</a>
-            <a class="link-quiet" href="https://github.com/grehard/coinpath" target="_blank" rel="noopener">Source on GitHub</a>
+            <a class="btn" href="projects/coinpath/index.html" data-try="coinpath" data-name="Coinpath" data-accent="#0e5a3c">Try it<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="btn-ghost" href="https://github.com/grehard/coinpath" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Source</a>
           </div>
         </div>
       </article>
 
       <article class="project" id="stockroom" style="--accent:#C8420B">
-        <div class="player">
-          <video preload="none" playsinline poster="assets/posters/stockroom.jpg" aria-label="One-minute overview of Stockroom, with on-screen captions">
-            <source src="assets/videos/stockroom.mp4" type="video/mp4">
-          </video>
-          <button type="button" class="play" aria-label="Play the one-minute overview of Stockroom">
-            <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview, 1:00</span>
-          </button>
+        <div class="frame">
+          <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i><span>Stockroom</span><b>1:00</b></div>
+          <div class="player">
+            <video preload="none" playsinline poster="assets/posters/stockroom.jpg" aria-label="One-minute overview of Stockroom, with on-screen captions">
+              <source src="assets/videos/stockroom.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="play" aria-label="Play the one-minute overview of Stockroom">
+              <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview</span>
+            </button>
+          </div>
         </div>
         <div class="info">
-          <p class="meta"><span class="dot"></span>Retail</p>
-          <h2>Stockroom</h2>
+          <p class="meta"><span class="dot"></span>Retail<span class="num">04</span></p>
+          <h3>Stockroom</h3>
           <p class="desc">For the owner of a small shop who rings up sales and orders stock from the same counter. It keeps the till, the shelves and the supplier orders in one exact record, in the browser, with no account or server.</p>
           <ul class="scope">
             <li>Keyboard-first register with discounts, tax and cash change</li>
             <li>Stock ledger, refunds and purchase orders with average cost</li>
             <li>Margin reports and end-of-day cash count</li>
           </ul>
-          <p class="stack">JavaScript, HTML, CSS, SVG, localStorage</p>
+          <ul class="stack" aria-label="Built with"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SVG</li><li>localStorage</li></ul>
           <div class="actions">
-            <a class="btn" href="projects/stockroom/index.html" data-try="stockroom" data-name="Stockroom" data-accent="#C8420B">Try it</a>
-            <a class="link-quiet" href="https://github.com/grehard/stockroom" target="_blank" rel="noopener">Source on GitHub</a>
+            <a class="btn" href="projects/stockroom/index.html" data-try="stockroom" data-name="Stockroom" data-accent="#C8420B">Try it<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="btn-ghost" href="https://github.com/grehard/stockroom" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Source</a>
           </div>
         </div>
       </article>
 
       <article class="project" id="billcraft" style="--accent:#0f5e5b">
-        <div class="player">
-          <video preload="none" playsinline poster="assets/posters/billcraft.jpg" aria-label="One-minute overview of Billcraft, with on-screen captions">
-            <source src="assets/videos/billcraft.mp4" type="video/mp4">
-          </video>
-          <button type="button" class="play" aria-label="Play the one-minute overview of Billcraft">
-            <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview, 1:00</span>
-          </button>
+        <div class="frame">
+          <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i><span>Billcraft</span><b>1:00</b></div>
+          <div class="player">
+            <video preload="none" playsinline poster="assets/posters/billcraft.jpg" aria-label="One-minute overview of Billcraft, with on-screen captions">
+              <source src="assets/videos/billcraft.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="play" aria-label="Play the one-minute overview of Billcraft">
+              <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview</span>
+            </button>
+          </div>
         </div>
         <div class="info">
-          <p class="meta"><span class="dot"></span>Finance</p>
-          <h2>Billcraft</h2>
+          <p class="meta"><span class="dot"></span>Finance<span class="num">05</span></p>
+          <h3>Billcraft</h3>
           <p class="desc">For freelancers and small studios who need to send proper invoices without paying for an accounting suite. It handles quotes, invoices, partial payments and client statements, and shows at a glance who owes what and how late it is.</p>
           <ul class="scope">
             <li>Invoices and quotes with live preview</li>
             <li>Partial payments and aged receivables</li>
             <li>Print-ready documents and client statements</li>
           </ul>
-          <p class="stack">JavaScript, HTML, CSS, SVG, localStorage</p>
+          <ul class="stack" aria-label="Built with"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SVG</li><li>localStorage</li></ul>
           <div class="actions">
-            <a class="btn" href="projects/billcraft/index.html" data-try="billcraft" data-name="Billcraft" data-accent="#0f5e5b">Try it</a>
-            <a class="link-quiet" href="https://github.com/grehard/billcraft" target="_blank" rel="noopener">Source on GitHub</a>
+            <a class="btn" href="projects/billcraft/index.html" data-try="billcraft" data-name="Billcraft" data-accent="#0f5e5b">Try it<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="btn-ghost" href="https://github.com/grehard/billcraft" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Source</a>
           </div>
         </div>
       </article>
 
       <article class="project" id="laneboard" style="--accent:#1767e5">
-        <div class="player">
-          <video preload="none" playsinline poster="assets/posters/laneboard.jpg" aria-label="One-minute overview of Laneboard, with on-screen captions">
-            <source src="assets/videos/laneboard.mp4" type="video/mp4">
-          </video>
-          <button type="button" class="play" aria-label="Play the one-minute overview of Laneboard">
-            <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview, 1:00</span>
-          </button>
+        <div class="frame">
+          <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i><span>Laneboard</span><b>1:00</b></div>
+          <div class="player">
+            <video preload="none" playsinline poster="assets/posters/laneboard.jpg" aria-label="One-minute overview of Laneboard, with on-screen captions">
+              <source src="assets/videos/laneboard.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="play" aria-label="Play the one-minute overview of Laneboard">
+              <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview</span>
+            </button>
+          </div>
         </div>
         <div class="info">
-          <p class="meta"><span class="dot"></span>Productivity</p>
-          <h2>Laneboard</h2>
+          <p class="meta"><span class="dot"></span>Productivity<span class="num">06</span></p>
+          <h3>Laneboard</h3>
           <p class="desc">For small teams that want to see what everyone is working on and notice when too much is in progress. It keeps several projects on custom lanes with work-in-progress limits, and every move or delete can be undone.</p>
           <ul class="scope">
             <li>Lanes with limits and drag and drop</li>
@@ -199,52 +237,58 @@
             <li>Calendar, table and archive views</li>
             <li>Filters, undo, JSON export and import</li>
           </ul>
-          <p class="stack">JavaScript, HTML, CSS, Pointer Events, localStorage</p>
+          <ul class="stack" aria-label="Built with"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Pointer Events</li><li>localStorage</li></ul>
           <div class="actions">
-            <a class="btn" href="projects/laneboard/index.html" data-try="laneboard" data-name="Laneboard" data-accent="#1767e5">Try it</a>
-            <a class="link-quiet" href="https://github.com/grehard/laneboard" target="_blank" rel="noopener">Source on GitHub</a>
+            <a class="btn" href="projects/laneboard/index.html" data-try="laneboard" data-name="Laneboard" data-accent="#1767e5">Try it<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="btn-ghost" href="https://github.com/grehard/laneboard" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Source</a>
           </div>
         </div>
       </article>
 
       <article class="project" id="formloom" style="--accent:#1c5a45">
-        <div class="player">
-          <video preload="none" playsinline poster="assets/posters/formloom.jpg" aria-label="One-minute overview of Formloom, with on-screen captions">
-            <source src="assets/videos/formloom.mp4" type="video/mp4">
-          </video>
-          <button type="button" class="play" aria-label="Play the one-minute overview of Formloom">
-            <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview, 1:00</span>
-          </button>
+        <div class="frame">
+          <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i><span>Formloom</span><b>1:00</b></div>
+          <div class="player">
+            <video preload="none" playsinline poster="assets/posters/formloom.jpg" aria-label="One-minute overview of Formloom, with on-screen captions">
+              <source src="assets/videos/formloom.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="play" aria-label="Play the one-minute overview of Formloom">
+              <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview</span>
+            </button>
+          </div>
         </div>
         <div class="info">
-          <p class="meta"><span class="dot"></span>Forms</p>
-          <h2>Formloom</h2>
+          <p class="meta"><span class="dot"></span>Forms<span class="num">07</span></p>
+          <h3>Formloom</h3>
           <p class="desc">For people who collect responses and don't have a developer: event organisers, small shops, hiring managers. Build a form by dragging fields, share it as a single link, and read the answers in a table and charts.</p>
           <ul class="scope">
             <li>Three-pane builder with validation and conditional logic</li>
             <li>Respondent view and share links with the form in the URL</li>
             <li>Response table, per-question charts and CSV export</li>
           </ul>
-          <p class="stack">JavaScript, HTML, CSS, SVG, Pointer Events, localStorage</p>
+          <ul class="stack" aria-label="Built with"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SVG</li><li>Pointer Events</li><li>localStorage</li></ul>
           <div class="actions">
-            <a class="btn" href="projects/formloom/index.html" data-try="formloom" data-name="Formloom" data-accent="#1c5a45">Try it</a>
-            <a class="link-quiet" href="https://github.com/grehard/formloom" target="_blank" rel="noopener">Source on GitHub</a>
+            <a class="btn" href="projects/formloom/index.html" data-try="formloom" data-name="Formloom" data-accent="#1c5a45">Try it<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="btn-ghost" href="https://github.com/grehard/formloom" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Source</a>
           </div>
         </div>
       </article>
 
       <article class="project" id="marginalia" style="--accent:#a5402d">
-        <div class="player">
-          <video preload="none" playsinline poster="assets/posters/marginalia.jpg" aria-label="One-minute overview of Marginalia, with on-screen captions">
-            <source src="assets/videos/marginalia.mp4" type="video/mp4">
-          </video>
-          <button type="button" class="play" aria-label="Play the one-minute overview of Marginalia">
-            <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview, 1:00</span>
-          </button>
+        <div class="frame">
+          <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i><span>Marginalia</span><b>1:00</b></div>
+          <div class="player">
+            <video preload="none" playsinline poster="assets/posters/marginalia.jpg" aria-label="One-minute overview of Marginalia, with on-screen captions">
+              <source src="assets/videos/marginalia.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="play" aria-label="Play the one-minute overview of Marginalia">
+              <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview</span>
+            </button>
+          </div>
         </div>
         <div class="info">
-          <p class="meta"><span class="dot"></span>Writing</p>
-          <h2>Marginalia</h2>
+          <p class="meta"><span class="dot"></span>Writing<span class="num">08</span></p>
+          <h3>Marginalia</h3>
           <p class="desc">For writers, students and researchers whose ideas span many notes. It keeps sources and drafts connected through wiki links, backlinks and a graph, without an account or a server.</p>
           <ul class="scope">
             <li>Markdown editor with live preview</li>
@@ -252,52 +296,58 @@
             <li>Ranked full-text search</li>
             <li>Version history, trash and file import</li>
           </ul>
-          <p class="stack">JavaScript, HTML, CSS, SVG, localStorage</p>
+          <ul class="stack" aria-label="Built with"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SVG</li><li>localStorage</li></ul>
           <div class="actions">
-            <a class="btn" href="projects/marginalia/index.html" data-try="marginalia" data-name="Marginalia" data-accent="#a5402d">Try it</a>
-            <a class="link-quiet" href="https://github.com/grehard/marginalia" target="_blank" rel="noopener">Source on GitHub</a>
+            <a class="btn" href="projects/marginalia/index.html" data-try="marginalia" data-name="Marginalia" data-accent="#a5402d">Try it<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="btn-ghost" href="https://github.com/grehard/marginalia" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Source</a>
           </div>
         </div>
       </article>
 
       <article class="project" id="recallo" style="--accent:#0b7285">
-        <div class="player">
-          <video preload="none" playsinline poster="assets/posters/recallo.jpg" aria-label="One-minute overview of Recallo, with on-screen captions">
-            <source src="assets/videos/recallo.mp4" type="video/mp4">
-          </video>
-          <button type="button" class="play" aria-label="Play the one-minute overview of Recallo">
-            <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview, 1:00</span>
-          </button>
+        <div class="frame">
+          <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i><span>Recallo</span><b>1:00</b></div>
+          <div class="player">
+            <video preload="none" playsinline poster="assets/posters/recallo.jpg" aria-label="One-minute overview of Recallo, with on-screen captions">
+              <source src="assets/videos/recallo.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="play" aria-label="Play the one-minute overview of Recallo">
+              <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview</span>
+            </button>
+          </div>
         </div>
         <div class="info">
-          <p class="meta"><span class="dot"></span>Education</p>
-          <h2>Recallo</h2>
+          <p class="meta"><span class="dot"></span>Education<span class="num">09</span></p>
+          <h3>Recallo</h3>
           <p class="desc">Recallo is for students and language learners who want to remember what they study without planning their own review schedule. It works out which cards are due each day with the SM-2 algorithm and shows exactly how long each answer pushes a card away.</p>
           <ul class="scope">
             <li>Nested decks with daily limits and four card types</li>
             <li>SM-2 study sessions with undo and a practice mode</li>
             <li>Card browser, statistics and file import</li>
           </ul>
-          <p class="stack">JavaScript, SVG, HTML, CSS, localStorage</p>
+          <ul class="stack" aria-label="Built with"><li>JavaScript</li><li>SVG</li><li>HTML</li><li>CSS</li><li>localStorage</li></ul>
           <div class="actions">
-            <a class="btn" href="projects/recallo/index.html" data-try="recallo" data-name="Recallo" data-accent="#0b7285">Try it</a>
-            <a class="link-quiet" href="https://github.com/grehard/recallo" target="_blank" rel="noopener">Source on GitHub</a>
+            <a class="btn" href="projects/recallo/index.html" data-try="recallo" data-name="Recallo" data-accent="#0b7285">Try it<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="btn-ghost" href="https://github.com/grehard/recallo" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Source</a>
           </div>
         </div>
       </article>
 
       <article class="project" id="mise" style="--accent:#b23a26">
-        <div class="player">
-          <video preload="none" playsinline poster="assets/posters/mise.jpg" aria-label="One-minute overview of Mise, with on-screen captions">
-            <source src="assets/videos/mise.mp4" type="video/mp4">
-          </video>
-          <button type="button" class="play" aria-label="Play the one-minute overview of Mise">
-            <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview, 1:00</span>
-          </button>
+        <div class="frame">
+          <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i><span>Mise</span><b>1:00</b></div>
+          <div class="player">
+            <video preload="none" playsinline poster="assets/posters/mise.jpg" aria-label="One-minute overview of Mise, with on-screen captions">
+              <source src="assets/videos/mise.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="play" aria-label="Play the one-minute overview of Mise">
+              <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview</span>
+            </button>
+          </div>
         </div>
         <div class="info">
-          <p class="meta"><span class="dot"></span>Home cooking</p>
-          <h2>Mise</h2>
+          <p class="meta"><span class="dot"></span>Home cooking<span class="num">10</span></p>
+          <h3>Mise</h3>
           <p class="desc">For home cooks who plan the week's meals and shop once. It turns recipes into a combined grocery list by aisle, minus what is already in the pantry.</p>
           <ul class="scope">
             <li>Recipes with paste-to-parse ingredients</li>
@@ -305,62 +355,68 @@
             <li>Grocery list that combines units and subtracts pantry</li>
             <li>Step-by-step cook mode with timers</li>
           </ul>
-          <p class="stack">JavaScript, HTML, CSS, SVG, Pointer Events, localStorage</p>
+          <ul class="stack" aria-label="Built with"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SVG</li><li>Pointer Events</li><li>localStorage</li></ul>
           <div class="actions">
-            <a class="btn" href="projects/mise/index.html" data-try="mise" data-name="Mise" data-accent="#b23a26">Try it</a>
-            <a class="link-quiet" href="https://github.com/grehard/mise" target="_blank" rel="noopener">Source on GitHub</a>
+            <a class="btn" href="projects/mise/index.html" data-try="mise" data-name="Mise" data-accent="#b23a26">Try it<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="btn-ghost" href="https://github.com/grehard/mise" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Source</a>
           </div>
         </div>
       </article>
 
       <article class="project" id="hourglass" style="--accent:#C2470A">
-        <div class="player">
-          <video preload="none" playsinline poster="assets/posters/hourglass.jpg" aria-label="One-minute overview of Hourglass, with on-screen captions">
-            <source src="assets/videos/hourglass.mp4" type="video/mp4">
-          </video>
-          <button type="button" class="play" aria-label="Play the one-minute overview of Hourglass">
-            <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview, 1:00</span>
-          </button>
+        <div class="frame">
+          <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i><span>Hourglass</span><b>1:00</b></div>
+          <div class="player">
+            <video preload="none" playsinline poster="assets/posters/hourglass.jpg" aria-label="One-minute overview of Hourglass, with on-screen captions">
+              <source src="assets/videos/hourglass.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="play" aria-label="Play the one-minute overview of Hourglass">
+              <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview</span>
+            </button>
+          </div>
         </div>
         <div class="info">
-          <p class="meta"><span class="dot"></span>Productivity</p>
-          <h2>Hourglass</h2>
+          <p class="meta"><span class="dot"></span>Productivity<span class="num">11</span></p>
+          <h3>Hourglass</h3>
           <p class="desc">For freelancers and consultants who bill by the hour across several clients. It tracks time with a timer or by hand, flags overlaps and budget overruns, and turns the hours into exact billable totals and a printable timesheet.</p>
           <ul class="scope">
             <li>Timer that survives reloads, plus focus sessions</li>
             <li>Day timeline and editable week timesheet</li>
             <li>Rates, budgets, reports and printable timesheets</li>
           </ul>
-          <p class="stack">JavaScript, SVG, Web Audio API, localStorage, CSS</p>
+          <ul class="stack" aria-label="Built with"><li>JavaScript</li><li>SVG</li><li>Web Audio API</li><li>localStorage</li><li>CSS</li></ul>
           <div class="actions">
-            <a class="btn" href="projects/hourglass/index.html" data-try="hourglass" data-name="Hourglass" data-accent="#C2470A">Try it</a>
-            <a class="link-quiet" href="https://github.com/grehard/hourglass" target="_blank" rel="noopener">Source on GitHub</a>
+            <a class="btn" href="projects/hourglass/index.html" data-try="hourglass" data-name="Hourglass" data-accent="#C2470A">Try it<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="btn-ghost" href="https://github.com/grehard/hourglass" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Source</a>
           </div>
         </div>
       </article>
 
       <article class="project" id="rhythm" style="--accent:#E8A317">
-        <div class="player">
-          <video preload="none" playsinline poster="assets/posters/rhythm.jpg" aria-label="One-minute overview of Rhythm, with on-screen captions">
-            <source src="assets/videos/rhythm.mp4" type="video/mp4">
-          </video>
-          <button type="button" class="play" aria-label="Play the one-minute overview of Rhythm">
-            <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview, 1:00</span>
-          </button>
+        <div class="frame">
+          <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i><span>Rhythm</span><b>1:00</b></div>
+          <div class="player">
+            <video preload="none" playsinline poster="assets/posters/rhythm.jpg" aria-label="One-minute overview of Rhythm, with on-screen captions">
+              <source src="assets/videos/rhythm.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="play" aria-label="Play the one-minute overview of Rhythm">
+              <span class="play-chip"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z" fill="currentColor"/></svg>Watch overview</span>
+            </button>
+          </div>
         </div>
         <div class="info">
-          <p class="meta"><span class="dot"></span>Productivity</p>
-          <h2>Rhythm</h2>
+          <p class="meta"><span class="dot"></span>Productivity<span class="num">12</span></p>
+          <h3>Rhythm</h3>
           <p class="desc">For people who want routines that fit a real week, not a perfect one. Flexible schedules and skip days keep streaks honest, so one sick day doesn't undo months of work.</p>
           <ul class="scope">
             <li>Flexible schedules and measurable targets</li>
             <li>Streaks that respect skip days</li>
             <li>Year heatmaps and completion statistics</li>
           </ul>
-          <p class="stack">JavaScript, SVG, HTML, CSS, localStorage</p>
+          <ul class="stack" aria-label="Built with"><li>JavaScript</li><li>SVG</li><li>HTML</li><li>CSS</li><li>localStorage</li></ul>
           <div class="actions">
-            <a class="btn" href="projects/rhythm/index.html" data-try="rhythm" data-name="Rhythm" data-accent="#E8A317">Try it</a>
-            <a class="link-quiet" href="https://github.com/grehard/rhythm" target="_blank" rel="noopener">Source on GitHub</a>
+            <a class="btn" href="projects/rhythm/index.html" data-try="rhythm" data-name="Rhythm" data-accent="#E8A317">Try it<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="btn-ghost" href="https://github.com/grehard/rhythm" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Source</a>
           </div>
         </div>
       </article>
@@ -368,9 +424,9 @@
     </section>
   </main>
 
-  <footer class="wrap">
-    <div class="foot">
-      <span>Grehard</span>
+  <footer class="foot-band">
+    <div class="wrap foot">
+      <span class="brand"><span class="mark" aria-hidden="true">G</span>Grehard</span>
       <a href="https://github.com/grehard" target="_blank" rel="noopener">github.com/grehard</a>
     </div>
   </footer>

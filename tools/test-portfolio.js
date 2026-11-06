@@ -59,7 +59,7 @@ const { startServer } = require('./serve');
     assert.strictEqual(await page.evaluate(() => document.activeElement.dataset.try), slug, 'focus should return to Try it');
     console.log(`  pass  ${slug}: poster, plays, ${duration.toFixed(1)}s, seeks, opens in page, closes`);
   }
-  await page.locator('#gridlens').scrollIntoViewIfNeeded();
+  await page.locator('#driftboard').scrollIntoViewIfNeeded();
   await page.screenshot({ path: path.join(out, 'home-project.png') });
 
   // A shared link opens the app directly; Escape closes it.

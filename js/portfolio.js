@@ -2,6 +2,21 @@
 (function () {
   'use strict';
 
+  // Project cards rise in once as they scroll into view.
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      });
+    }, { rootMargin: '0px 0px -6% 0px' });
+    document.querySelectorAll('.project').forEach((card) => {
+      card.classList.add('reveal');
+      observer.observe(card);
+    });
+  }
+
   const players = Array.from(document.querySelectorAll('.player'));
 
   function pauseVideosExcept(current) {
