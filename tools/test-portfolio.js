@@ -6,7 +6,7 @@ const { startServer } = require('./serve');
 
 (async () => {
   const { server, port } = await startServer(0);
-  // Set BASE_URL to test a deployed copy, e.g. BASE_URL=https://kazelweb.github.io
+  // Set BASE_URL to test a deployed copy, e.g. BASE_URL=https://grehard.github.io
   const base = (process.env.BASE_URL || `http://127.0.0.1:${port}`).replace(/\/$/, '');
   const browser = await chromium.launch({ channel: 'chrome', headless: true });
   const out = path.join(__dirname, '.out');

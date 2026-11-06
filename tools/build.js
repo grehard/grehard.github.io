@@ -4,8 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 
-const GITHUB_USER = 'KazelWeb';
-// Turn on once each project is pushed to github.com/KazelWeb/<slug>, so a Source link is never broken.
+const GITHUB_USER = 'grehard';
+// Turn on once each project is pushed to github.com/grehard/<slug>, so a Source link is never broken.
 const REPOS_PUBLISHED = true;
 const ORDER = ['gridlens', 'driftboard', 'coinpath', 'stockroom', 'billcraft', 'laneboard', 'formloom', 'marginalia', 'recallo', 'mise', 'hourglass', 'rhythm'];
 

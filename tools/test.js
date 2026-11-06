@@ -89,7 +89,7 @@ async function runProject(slug, browser, base) {
     : args;
   if (!slugs.length) { console.error('Usage: node tools/test.js <slug>|--all'); process.exit(2); }
   const { server, port } = await startServer(0);
-  // Set BASE_URL to test a deployed copy, e.g. BASE_URL=https://kazelweb.github.io
+  // Set BASE_URL to test a deployed copy, e.g. BASE_URL=https://grehard.github.io
   const base = (process.env.BASE_URL || `http://127.0.0.1:${port}`).replace(/\/$/, '');
   const browser = await chromium.launch({ channel: 'chrome', headless: true });
   let failed = 0; let passed = 0;
