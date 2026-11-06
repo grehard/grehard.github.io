@@ -1,0 +1,19 @@
+{
+  "slug": "mise",
+  "name": "Mise",
+  "category": "Home cooking",
+  "accent": "#b23a26",
+  "tagline": "Recipe box, weekly meal planner and smart grocery list",
+  "description": "For home cooks who plan the week's meals and shop once. It turns recipes into a combined grocery list by aisle, minus what is already in the pantry.",
+  "scope": ["Recipes with paste-to-parse ingredients", "Weekly planner with drag and drop", "Grocery list that combines units and subtracts pantry", "Step-by-step cook mode with timers"],
+  "features": [
+    "Paste free-text ingredient lines such as \"1 1/2 cups flour\" and get quantity, unit, name, notes and aisle",
+    "Serving scaler with cook-friendly fractions: 1/4 cup halved reads as 2 tbsp",
+    "Drag recipes onto a breakfast, lunch and dinner grid with pointer events, or tap + to add",
+    "Grocery list adds compatible units (2 tbsp + 1/4 cup = 6 tbsp), subtracts pantry stock and prints by aisle",
+    "Cook mode offers timers for the times mentioned in each step",
+    "Daily and weekly nutrition totals, with JSON export and import"
+  ],
+  "stack": ["JavaScript", "HTML", "CSS", "SVG", "Pointer Events", "localStorage"],
+  "engineering": "A hand-written ingredient parser feeds a unit engine that adds amounts in base units and then picks the measure a cook would use, so 18 teaspoons of olive oil shows as 6 tbsp."
+}

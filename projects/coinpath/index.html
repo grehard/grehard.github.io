@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coinpath</title>
+  <meta name="description" content="Personal finance tracker with accounts, transfers, monthly budgets, recurring transactions and CSV import. Data stays in your browser.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='11' fill='%230e5a3c'/%3E%3Cpath d='M6 16l4-5 3 3 5-7' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script src="js/ui/theme.js"></script>
+</head>
+<body>
+  <div id="app" class="app">
+    <aside id="sidebar" class="sidebar"></aside>
+    <main id="main" class="main"></main>
+  </div>
+  <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+
+  <script src="js/core/money.js"></script>
+  <script src="js/core/dates.js"></script>
+  <script src="js/core/csv.js"></script>
+  <script src="js/core/store.js"></script>
+  <script src="js/core/ledger.js"></script>
+  <script src="js/core/budgets.js"></script>
+  <script src="js/core/recurring.js"></script>
+  <script src="js/core/importer.js"></script>
+  <script src="js/core/exporter.js"></script>
+  <script src="js/core/seed.js"></script>
+  <script src="js/ui/dom.js"></script>
+  <script src="js/ui/overlays.js"></script>
+  <script src="js/ui/charts.js"></script>
+  <script src="js/ui/tx-form.js"></script>
+  <script src="js/views/dashboard.js"></script>
+  <script src="js/views/transactions.js"></script>
+  <script src="js/views/accounts.js"></script>
+  <script src="js/views/budgets.js"></script>
+  <script src="js/views/recurring.js"></script>
+  <script src="js/views/import-flow.js"></script>
+  <script src="js/views/settings.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

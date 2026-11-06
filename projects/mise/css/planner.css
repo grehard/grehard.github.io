@@ -1,0 +1,117 @@
+/* The week grid, recipe shelf and nutrition panel. */
+.week-nav { display: flex; align-items: center; gap: 6px; }
+.week-empty { margin: -6px 0 14px; color: var(--ink-2); }
+.planner-layout { display: grid; grid-template-columns: 204px minmax(0, 1fr); gap: 20px; align-items: stretch; }
+
+.shelf { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.shelf h2 { font-size: 17px; }
+.shelf-hint { font-size: 12.5px; line-height: 1.35; margin-bottom: 2px; }
+.shelf-list { flex: 1 1 0; min-height: 200px; max-height: 480px; overflow-y: auto; margin-top: 4px; border-top: 1px solid var(--rule); }
+.shelf-empty { padding: 8px 0; }
+.shelf-item {
+  display: block; width: 100%; padding: 8px 4px; background: none; border: 0; border-bottom: 1px solid var(--rule);
+  color: var(--ink); font: 14px/1.28 var(--serif); text-align: left; cursor: grab;
+  -webkit-user-select: none; user-select: none; touch-action: pan-y; -webkit-touch-callout: none;
+}
+.shelf-item:hover { background: var(--tint); }
+
+.grid-wrap { min-width: 0; }
+.week-grid {
+  display: grid; grid-template-columns: 22px repeat(7, minmax(0, 1fr)); grid-template-rows: auto repeat(3, minmax(136px, auto));
+  border-top: 2px solid var(--ink);
+}
+.day { display: contents; }
+.row-label {
+  writing-mode: vertical-rl; transform: rotate(180deg); display: flex; align-items: center; justify-content: center;
+  font: italic 500 13px var(--serif); color: var(--ink-2); border-bottom: 1px solid var(--rule);
+}
+.day-head { display: flex; flex-direction: column; gap: 1px; padding: 7px 8px 6px; border-bottom: 1px solid var(--rule-strong); border-left: 1px solid var(--rule); }
+.day-name { font: 600 15px var(--serif); }
+.day-date { font-weight: 400; color: var(--ink-2); }
+.day-kcal { font-size: 12px; color: var(--ink-2); font-variant-numeric: tabular-nums; min-height: 18px; }
+.day-head.today { background: var(--accent-soft); }
+.day-head.today .day-date { color: var(--accent); font-weight: 600; }
+
+.slot {
+  position: relative; display: flex; flex-direction: column; gap: 4px; padding: 5px 5px 26px;
+  border-bottom: 1px solid var(--rule); border-left: 1px solid var(--rule); min-width: 0;
+}
+.is-today .slot { background: color-mix(in srgb, var(--accent-soft) 35%, transparent); }
+.slot-label { display: none; }
+.slot-entries { display: flex; flex-direction: column; gap: 4px; }
+.slot.drop-over { outline: 2px solid var(--accent); outline-offset: -2px; background: var(--accent-soft); }
+.slot-add {
+  position: absolute; right: 4px; bottom: 4px; display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px;
+  padding: 0; background: none; border: 0; border-radius: 3px; color: var(--ink-2); cursor: pointer; opacity: 0.65;
+}
+.slot:hover .slot-add, .slot-add:focus-visible { opacity: 1; }
+.slot-add:hover { background: var(--tint); color: var(--accent); }
+
+.entry {
+  display: flex; flex-direction: column; gap: 1px; width: 100%; padding: 5px 6px; background: var(--leaf); border: 1px solid var(--rule);
+  border-radius: 3px; color: var(--ink); text-align: left; cursor: grab;
+  -webkit-user-select: none; user-select: none; touch-action: pan-y; -webkit-touch-callout: none;
+}
+.entry:hover { border-color: var(--rule-strong); }
+.entry-title {
+  font: 500 13px/1.22 var(--serif); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; overflow-wrap: break-word;
+}
+.entry-meta { font-size: 11.5px; color: var(--ink-2); }
+
+.drag-ghost {
+  position: fixed; left: 0; top: 0; z-index: 70; max-width: 190px; padding: 6px 9px; pointer-events: none;
+  background: var(--ink); color: var(--paper); border-radius: 3px; font: 500 13px/1.25 var(--serif);
+}
+.drag-source { opacity: 0.45; }
+body.is-dragging, body.is-dragging * { cursor: grabbing !important; }
+
+/* Nutrition */
+.nutrition-panel { margin-top: 30px; padding-top: 18px; border-top: 2px solid var(--ink); }
+.nutrition-panel h2 { font-size: 22px; }
+.nutrition-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 32px; margin-top: 14px; align-items: start; }
+.chart { margin: 0; }
+.chart figcaption { font-weight: 500; margin-bottom: 4px; font-size: 14px; }
+.chart-frame { position: relative; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart-grid { stroke: var(--rule); stroke-width: 1; }
+.chart-base { stroke: var(--rule-strong); stroke-width: 1; }
+.chart-axis { fill: var(--ink-2); font: 12px var(--sans); }
+.chart-value { fill: var(--ink); font: 500 12px var(--sans); font-variant-numeric: tabular-nums; }
+.chart-bar { fill: var(--accent); }
+.chart-hit { fill: transparent; cursor: default; }
+.chart-hit:focus { outline: none; }
+.chart-hit:focus-visible { outline: none; stroke: var(--focus); stroke-width: 2; }
+.chart-day:hover .chart-bar { fill: var(--accent-hover); }
+.chart-tip {
+  position: absolute; top: 2px; transform: translateX(-50%); display: flex; flex-direction: column; gap: 1px; padding: 6px 9px; min-width: 132px;
+  background: var(--ink); color: var(--paper); border-radius: 3px; font-size: 12.5px; pointer-events: none; z-index: 2; font-variant-numeric: tabular-nums;
+}
+.nutrition-table { width: 100%; border-collapse: collapse; font-size: 13.5px; font-variant-numeric: tabular-nums; white-space: nowrap; overflow-wrap: normal; }
+.nutrition-table th, .nutrition-table td { padding: 5px 10px; border-bottom: 1px solid var(--rule); text-align: right; }
+.nutrition-table th:first-child { text-align: left; padding-left: 0; font-weight: 500; }
+.nutrition-table thead th { font-weight: 500; color: var(--ink-2); font-size: 12.5px; vertical-align: bottom; }
+.th-unit { display: block; font-weight: 400; font-size: 11.5px; }
+.nutrition-table tfoot th, .nutrition-table tfoot td { font-weight: 600; border-bottom: 0; }
+.nutrition-table tfoot tr:first-child th, .nutrition-table tfoot tr:first-child td { border-top: 1px solid var(--rule-strong); }
+
+@media (max-width: 1080px) {
+  .planner-layout { grid-template-columns: minmax(0, 1fr); }
+  .shelf { display: none; }
+}
+
+@media (max-width: 860px) {
+  .week-grid { display: block; border-top: 0; }
+  .row-label { display: none; }
+  .day { display: block; margin-bottom: 18px; border-top: 2px solid var(--ink); }
+  .day-head { flex-direction: row; align-items: baseline; justify-content: space-between; border-left: 0; padding: 7px 4px; }
+  .day-name { font-size: 17px; }
+  .slot {
+    border-left: 0; padding: 8px 40px 8px 86px; min-height: 48px;
+  }
+  .slot-label { display: block; position: absolute; left: 4px; top: 11px; font: italic 500 14px var(--serif); color: var(--ink-2); }
+  .slot-add { top: 6px; right: 0; bottom: auto; width: 36px; height: 36px; opacity: 1; }
+  .entry { padding: 7px 9px; }
+  .entry-title { font-size: 14.5px; }
+  .entry-meta { font-size: 12.5px; }
+  .nutrition-body { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+}

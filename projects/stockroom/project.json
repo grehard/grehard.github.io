@@ -1,0 +1,23 @@
+{
+  "slug": "stockroom",
+  "name": "Stockroom",
+  "category": "Retail",
+  "accent": "#C8420B",
+  "tagline": "Point of sale and inventory for a small independent shop",
+  "description": "For the owner of a small shop who rings up sales and orders stock from the same counter. It keeps the till, the shelves and the supplier orders in one exact record, in the browser, with no account or server.",
+  "scope": [
+    "Keyboard-first register with discounts, tax and cash change",
+    "Stock ledger, refunds and purchase orders with average cost",
+    "Margin reports and end-of-day cash count"
+  ],
+  "features": [
+    "Register with search, category tabs, SKU and barcode entry, hold and resume, and F-key shortcuts",
+    "Line and order discounts with tax worked out in integer cents, plus an 80mm print receipt",
+    "Append-only stock ledger covering sales, restocked refunds, adjustments and PO receipts",
+    "Purchase orders from draft to partial to received, with one-click reorder from low stock alerts",
+    "Revenue, gross margin and top seller reports by day, product and category in hand-built SVG charts",
+    "End-of-day count by note and coin with over or short, CSV exports, and JSON backup and restore"
+  ],
+  "stack": ["JavaScript", "HTML", "CSS", "SVG", "localStorage"],
+  "engineering": "Order discounts and tax are allocated to sale lines by largest remainder, and refunds difference cumulative shares, so repeated partial refunds always sum to the exact cents originally charged."
+}

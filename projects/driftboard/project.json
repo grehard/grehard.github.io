@@ -1,0 +1,24 @@
+{
+  "slug": "driftboard",
+  "name": "Driftboard",
+  "category": "Design tool",
+  "accent": "#e8401c",
+  "tagline": "Infinite whiteboard for diagrams, wireframes and system sketches",
+  "description": "For engineers and designers who sketch systems and screens and need the result to stay tidy when it changes. Connectors stay attached as shapes move, snapping keeps layouts aligned, and boards export to PNG, SVG or JSON with no account or server.",
+  "scope": [
+    "Infinite canvas with zoom to cursor and pinch",
+    "Connectors that re-route as shapes move",
+    "Snapping, groups, layers and full undo",
+    "PNG, SVG and JSON export of named boards"
+  ],
+  "features": [
+    "Ten drawing and editing tools, including freehand pen smoothing, sticky notes and inline text",
+    "Straight and elbow connectors that attach to shapes and re-route when shapes move or rotate",
+    "Move, resize and rotate single shapes or groups, with grid snapping and alignment guides",
+    "Complete undo and redo, with layer order, group, lock, copy and paste",
+    "Multiple named boards with a minimap, stored in the browser",
+    "PNG and SVG export of the selection or whole board, plus JSON save and load with validation"
+  ],
+  "stack": ["JavaScript", "Canvas 2D", "Pointer Events", "SVG export", "localStorage"],
+  "engineering": "Shapes are immutable, so undo history stores only references to changed objects, while a uniform-grid spatial index limits hit testing and drawing to nearby shapes on a 1,000-shape board."
+}

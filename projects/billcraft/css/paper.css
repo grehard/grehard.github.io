@@ -1,0 +1,148 @@
+/* The document itself. Paper stays white in dark mode, and these colours never follow the app theme. */
+.sheet-frame {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  border-radius: 3px;
+  background: #ffffff;
+}
+.sheet {
+  --ink: #1b2625;
+  --ink-2: #4b5957;
+  --rule: #d7dedc;
+  --brand: #0f5e5b;
+  display: flex;
+  flex-direction: column;
+  width: 760px;
+  min-height: 1074px;
+  padding: 56px 58px 36px;
+  background: #ffffff;
+  color: var(--ink);
+  font-size: 13.5px;
+  line-height: 1.45;
+  transform-origin: top left;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.sheet p { margin: 0; }
+.sheet-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 28px; }
+.sheet-brand { display: flex; gap: 14px; min-width: 0; }
+.sheet-logo { width: 48px; height: 48px; object-fit: contain; flex: none; }
+.sheet-business { font-size: 15.5px; font-weight: 650; }
+.sheet-address { color: var(--ink-2); font-size: 12.5px; white-space: pre-line; }
+.sheet-title { text-align: right; flex: none; max-width: 45%; }
+.sheet-kind { font-size: 32px; line-height: 1.1; font-weight: 300; letter-spacing: -0.01em; color: var(--brand); }
+.sheet-number { margin-top: 4px; font-weight: 650; }
+.sheet-parties {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  margin: 34px 0 26px;
+  padding-top: 16px;
+  border-top: 2px solid var(--brand);
+}
+.sheet-party { min-width: 0; }
+.sheet-label { margin-bottom: 3px; color: var(--ink-2); font-size: 11.5px; font-weight: 600; }
+.sheet-client { font-size: 14.5px; font-weight: 650; }
+.sheet-muted { color: var(--ink-2); font-size: 12.5px; }
+.sheet-meta { display: flex; flex-direction: column; gap: 4px; flex: none; min-width: 210px; }
+.sheet-meta > div { display: flex; justify-content: space-between; gap: 20px; }
+.sheet-meta dt { color: var(--ink-2); font-size: 12.5px; }
+.sheet-meta dd { font-weight: 600; text-align: right; }
+
+.sheet-lines { width: 100%; border-collapse: collapse; }
+.sheet-lines th {
+  padding: 7px 8px;
+  border-bottom: 1.5px solid var(--ink);
+  color: var(--ink);
+  font-size: 11.5px;
+  font-weight: 650;
+  text-align: left;
+}
+.sheet-lines td { padding: 9px 8px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.sheet-lines th:first-child, .sheet-lines td:first-child { padding-left: 0; }
+.sheet-lines th:last-child, .sheet-lines td:last-child { padding-right: 0; }
+.sheet-lines .col-num { text-align: right; white-space: nowrap; }
+.sheet-lines .col-amount { font-weight: 600; }
+.sheet-lines tr { page-break-inside: avoid; break-inside: avoid; }
+.line-title { display: block; font-weight: 550; }
+.line-detail { display: block; color: var(--ink-2); font-size: 12.5px; white-space: pre-line; }
+.sheet-opening td { color: var(--ink-2); }
+.sheet-ledger .nowrap { white-space: nowrap; }
+
+.sheet-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 20px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.sheet-notes { flex: 1 1 auto; display: flex; flex-direction: column; gap: 12px; min-width: 0; font-size: 12.5px; }
+.sheet-pre { white-space: pre-line; color: var(--ink); }
+.sheet-totals { flex: 0 0 300px; }
+.sheet-total-row { display: flex; justify-content: space-between; gap: 16px; padding: 4px 0; }
+.sheet-total-row dd { white-space: nowrap; }
+.sheet-tax-row dt { color: var(--ink-2); }
+.sheet-grand {
+  margin-top: 4px;
+  padding-top: 8px;
+  border-top: 1.5px solid var(--ink);
+  font-size: 15px;
+  font-weight: 650;
+}
+.sheet-balance {
+  margin-top: 6px;
+  padding: 8px 10px;
+  background: var(--brand);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 650;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.sheet-aging { margin-top: 22px; break-inside: avoid; page-break-inside: avoid; }
+.sheet-aging dl { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; border: 1px solid var(--rule); }
+.sheet-aging dl > div { padding: 6px 9px; border-left: 1px solid var(--rule); }
+.sheet-aging dl > div:first-child { border-left: 0; }
+.sheet-aging dt { color: var(--ink-2); font-size: 11.5px; }
+.sheet-aging dd { font-weight: 600; }
+.sheet-foot {
+  margin-top: auto;
+  padding-top: 26px;
+  color: var(--ink-2);
+  font-size: 11.5px;
+  text-align: center;
+}
+
+/* Narrow screens reflow the sheet instead of shrinking it to an unreadable size. */
+@media screen {
+  .sheet-frame.is-compact .sheet { width: auto; min-height: 0; padding: 20px 16px 18px; }
+  .is-compact .sheet-head { flex-direction: column-reverse; gap: 14px; }
+  .is-compact .sheet-title { text-align: left; max-width: none; }
+  .is-compact .sheet-kind { font-size: 26px; }
+  .is-compact .sheet-parties { flex-direction: column; gap: 14px; margin: 18px 0; }
+  .is-compact .sheet-summary { flex-direction: column-reverse; gap: 18px; }
+  .is-compact .sheet-totals { flex: none; }
+  .is-compact .sheet-foot { padding-top: 18px; }
+  .is-compact .sheet-lines:not(.sheet-ledger) thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .is-compact .sheet-lines:not(.sheet-ledger),
+  .is-compact .sheet-lines:not(.sheet-ledger) tbody { display: block; }
+  .is-compact .sheet-lines:not(.sheet-ledger) tr {
+    display: grid;
+    grid-template-columns: auto auto auto minmax(0, 1fr);
+    gap: 2px 12px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .is-compact .sheet-lines:not(.sheet-ledger) tr:first-child { border-top: 1.5px solid var(--ink); }
+  .is-compact .sheet-lines:not(.sheet-ledger) td { display: block; padding: 0; border: 0; text-align: left; font-size: 12.5px; }
+  .is-compact .sheet-lines:not(.sheet-ledger) .col-desc { grid-column: 1 / -1; font-size: 13.5px; }
+  .is-compact .sheet-lines:not(.sheet-ledger) .col-amount { text-align: right; font-size: 13.5px; }
+  .is-compact .sheet-lines:not(.sheet-ledger) td[data-label]::before { content: attr(data-label) " "; color: var(--ink-2); }
+  .is-compact .sheet-ledger { display: block; overflow-x: auto; }
+  .is-compact .sheet-ledger td, .is-compact .sheet-ledger th { white-space: nowrap; }
+  .is-compact .sheet-aging dl { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .is-compact .sheet-aging dl > div { border-left: 0; border-top: 1px solid var(--rule); }
+  .is-compact .sheet-aging dl > div:nth-child(-n + 2) { border-top: 0; }
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "hourglass",
+  "name": "Hourglass",
+  "category": "Productivity",
+  "accent": "#C2470A",
+  "tagline": "Time tracking and timesheets for freelancers and consultants",
+  "description": "For freelancers and consultants who bill by the hour across several clients. It tracks time with a timer or by hand, flags overlaps and budget overruns, and turns the hours into exact billable totals and a printable timesheet.",
+  "scope": [
+    "Timer that survives reloads, plus focus sessions",
+    "Day timeline and editable week timesheet",
+    "Rates, budgets, reports and printable timesheets"
+  ],
+  "features": [
+    "Start/stop timer stored as a start timestamp, shown in the tab title and intact after reloads",
+    "Focus sessions with configurable work and break intervals and a Web Audio chime",
+    "Day timeline with drag-to-add, overlap warnings and splitting, plus a week grid with editable cells",
+    "Rounding to none, 6 or 15 minutes, applied once per entry even across midnight",
+    "Reports filtered by date, client, project, tag and billable, with hand-built SVG charts",
+    "Budget progress and over-budget alerts, printable timesheet, CSV and JSON export, validated JSON import"
+  ],
+  "stack": ["JavaScript", "SVG", "Web Audio API", "localStorage", "CSS"],
+  "engineering": "Entries are cut at each local midnight while rounding applies once to the whole entry, and money is summed in exact cent-milliseconds and rounded only for display, so totals never pick up cent drift."
+}

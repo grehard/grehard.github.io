@@ -1,0 +1,23 @@
+{
+  "slug": "formloom",
+  "name": "Formloom",
+  "category": "Forms",
+  "accent": "#1c5a45",
+  "tagline": "Drag-and-drop form and survey builder that needs no server",
+  "description": "For people who collect responses and don't have a developer: event organisers, small shops, hiring managers. Build a form by dragging fields, share it as a single link, and read the answers in a table and charts.",
+  "scope": [
+    "Three-pane builder with validation and conditional logic",
+    "Respondent view and share links with the form in the URL",
+    "Response table, per-question charts and CSV export"
+  ],
+  "features": [
+    "13 field types, added and reordered by pointer drag, keyboard or buttons, with undo and redo",
+    "Required, min/max, regex and custom-message validation, enforced in a real respondent view",
+    "Show-when logic across chained questions and pages, with loops blocked in the builder and contained on import",
+    "Share links that hold the whole compressed form, opening straight in respondent mode",
+    "Sortable, filterable response table, hand-built SVG summary charts, and RFC 4180 CSV export",
+    "JSON export and import of forms, five templates, and per-form themes"
+  ],
+  "stack": ["JavaScript", "HTML", "CSS", "SVG", "Pointer Events", "localStorage"],
+  "engineering": "The logic evaluator finds loops up front with Tarjan's strongly connected components, so results never depend on evaluation order, and share links use a hand-written LZW codec with a primed dictionary and a checksum that rejects truncated links."
+}

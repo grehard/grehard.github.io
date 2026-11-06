@@ -1,0 +1,24 @@
+{
+  "slug": "marginalia",
+  "name": "Marginalia",
+  "category": "Writing",
+  "accent": "#a5402d",
+  "tagline": "Linked Markdown notes for writers, students and researchers",
+  "description": "For writers, students and researchers whose ideas span many notes. It keeps sources and drafts connected through wiki links, backlinks and a graph, without an account or a server.",
+  "scope": [
+    "Markdown editor with live preview",
+    "Wiki links, backlinks and link graph",
+    "Ranked full-text search",
+    "Version history, trash and file import"
+  ],
+  "features": [
+    "Hand-written Markdown parser with nested lists, tables and tasks you tick in the preview",
+    "[[Wiki links]] with autocomplete, creation from unresolved links, and a backlinks panel",
+    "Renaming a note rewrites every link to it, keeps aliases and leaves code untouched",
+    "Ranked search across titles, tags, headings and text, with highlighted snippets",
+    "Force-directed SVG graph of linked notes: click to open, drag to rearrange",
+    "Version history with line diffs and restore, plus trash, pinning, and .md and JSON import and export"
+  ],
+  "stack": ["JavaScript", "HTML", "CSS", "SVG", "localStorage"],
+  "engineering": "A hand-written Markdown parser implements CommonMark's delimiter rules for emphasis, escapes all source text by construction, allowlists URL schemes, and tracks source line numbers through nested blocks so a preview checkbox edits the right line."
+}

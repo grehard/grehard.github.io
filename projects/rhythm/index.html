@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rhythm</title>
+  <meta name="description" content="A habit tracker with flexible schedules, skip days that protect your streak, year heatmaps and statistics. Runs entirely in your browser.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23E8A317'/%3E%3Cpath d='M9 22v-7M16 22V9M23 22v-4' stroke='%232B1D00' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/today.css">
+  <link rel="stylesheet" href="css/views.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail">
+      <a class="brand" href="#/today" aria-label="Rhythm, go to Today">
+        <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><rect width="32" height="32" rx="7" class="brand-mark"/><path d="M9 22v-7M16 22V9M23 22v-4" class="brand-bars"/></svg>
+        <span>Rhythm</span>
+      </a>
+      <nav id="nav" aria-label="Main"></nav>
+      <button type="button" id="theme-toggle" class="rail-theme"></button>
+    </aside>
+    <main id="view" class="main"></main>
+  </div>
+  <div id="overlays"></div>
+  <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+  <noscript>Rhythm needs JavaScript to run.</noscript>
+
+  <script src="js/logic/dates.js"></script>
+  <script src="js/logic/schedule.js"></script>
+  <script src="js/logic/streaks.js"></script>
+  <script src="js/logic/stats.js"></script>
+  <script src="js/logic/reminder-rules.js"></script>
+  <script src="js/data/validate.js"></script>
+  <script src="js/data/seed.js"></script>
+  <script src="js/data/store.js"></script>
+  <script src="js/data/select.js"></script>
+  <script src="js/data/transfer.js"></script>
+  <script src="js/ui/dom.js"></script>
+  <script src="js/ui/overlays.js"></script>
+  <script src="js/ui/forms.js"></script>
+  <script src="js/ui/charts.js"></script>
+  <script src="js/ui/habit-form.js"></script>
+  <script src="js/ui/log-dialog.js"></script>
+  <script src="js/ui/note-editor.js"></script>
+  <script src="js/reminders.js"></script>
+  <script src="js/views/today.js"></script>
+  <script src="js/views/week.js"></script>
+  <script src="js/views/habits.js"></script>
+  <script src="js/views/detail.js"></script>
+  <script src="js/views/stats.js"></script>
+  <script src="js/views/journal.js"></script>
+  <script src="js/views/settings.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "slug": "rhythm",
+  "name": "Rhythm",
+  "category": "Productivity",
+  "accent": "#E8A317",
+  "tagline": "A habit tracker for routines, without guilt-driven gimmicks",
+  "description": "For people who want routines that fit a real week, not a perfect one. Flexible schedules and skip days keep streaks honest, so one sick day doesn't undo months of work.",
+  "scope": ["Flexible schedules and measurable targets", "Streaks that respect skip days", "Year heatmaps and completion statistics"],
+  "features": [
+    "Four schedule types: daily, specific weekdays, N times per week, every N days",
+    "Yes or no and measurable targets, with one-tap completion and a quick log",
+    "Skip days that never break a streak, and backfilling from a week grid",
+    "Current and best streaks, year heatmaps, a 12-week trend and best weekday",
+    "Daily journal, plus reminders that fall back in-app when notifications are blocked",
+    "JSON and CSV export, and validated JSON import with undo"
+  ],
+  "stack": ["JavaScript", "SVG", "HTML", "CSS", "localStorage"],
+  "engineering": "Every schedule type compiles to a list of periods with a required count, so the same pure functions compute streaks and rates for all four, using whole-number day indexes that a DST change can't shift."
+}

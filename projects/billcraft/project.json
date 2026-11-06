@@ -1,0 +1,19 @@
+{
+  "slug": "billcraft",
+  "name": "Billcraft",
+  "category": "Finance",
+  "accent": "#0f5e5b",
+  "tagline": "Invoicing for freelancers and small studios",
+  "description": "For freelancers and small studios who need to send proper invoices without paying for an accounting suite. It handles quotes, invoices, partial payments and client statements, and shows at a glance who owes what and how late it is.",
+  "scope": ["Invoices and quotes with live preview", "Partial payments and aged receivables", "Print-ready documents and client statements"],
+  "features": [
+    "Invoice editor with live paper preview, drag-to-reorder lines, per-line tax and percentage or fixed discounts",
+    "Automatic sequential numbering that never reuses the number of a sent invoice",
+    "Multiple partial payments per invoice, with overdue status computed from the due date",
+    "Quotes that convert to invoices, and duplicate for any document",
+    "Dashboard with outstanding, overdue, paid this month and an aged-receivables breakdown",
+    "Per-client statements with running balances, print stylesheet for A4 or Letter, CSV and JSON export, validated JSON import"
+  ],
+  "stack": ["JavaScript", "HTML", "CSS", "SVG", "localStorage"],
+  "engineering": "All money runs in integer cents through BigInt rounding: a discount is split across lines by the largest remainder method, then tax is rounded once per rate, so the printed tax summary always adds up exactly."
+}

@@ -1,0 +1,112 @@
+/* Lanes are open columns divided by hairlines; the state of a lane shows in its gauge and tint. */
+.board { display: flex; height: 100%; overflow-x: auto; overflow-y: hidden; }
+
+.lane {
+  flex: 1 0 204px; max-width: 360px; min-width: 0; display: flex; flex-direction: column;
+  border-right: 1px solid var(--line);
+}
+.lane.wip-over { background: var(--danger-soft); }
+.lane.is-drop-target { background: var(--accent-tint); }
+.lane.is-drop-target.would-exceed { background: var(--danger-soft); }
+
+.lane-head { flex: none; padding: 8px 10px 8px 12px; cursor: grab; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.lane-title-row { display: flex; align-items: center; gap: 5px; min-height: 28px; }
+.lane-name { font-size: 13.5px; font-weight: 650; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lane-done-mark { display: inline-flex; color: var(--accent-text); flex: none; }
+.lane-count { flex: none; font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.lane-actions { display: flex; flex: none; margin-left: auto; margin-right: -4px; }
+.lane-actions .icon-btn { width: 24px; height: 24px; }
+
+.lane-status-row { display: flex; align-items: center; gap: 8px; height: 18px; margin-top: 2px; }
+.gauge { flex: 1; display: flex; gap: 2px; min-width: 20px; height: 4px; }
+.gauge .tick { flex: 1; max-width: 22px; background: var(--line); border-radius: 1px; }
+.gauge .tick.is-filled { background: var(--accent); }
+.gauge .tick.is-over { background: var(--danger); }
+.gauge-none { background: none; }
+.gauge-bar { background: var(--line); border-radius: 1px; overflow: hidden; }
+.gauge-bar span { display: block; background: var(--accent); }
+
+.lane-status { flex: none; font-size: 12px; color: var(--muted); white-space: nowrap; }
+.lane-status-text, .lane-status-preview { display: inline-flex; align-items: center; gap: 4px; }
+.lane-status-preview { display: none; color: var(--danger); font-weight: 600; }
+.would-exceed .lane-status-text { display: none; }
+.would-exceed .lane-status-preview { display: inline-flex; }
+.lane-shown { flex: none; font-size: 12px; color: var(--accent-text); white-space: nowrap; }
+
+.wip-at .gauge .tick.is-filled { background: var(--warn); }
+.wip-at .lane-status { color: var(--warn); font-weight: 600; }
+.wip-over .lane-name, .wip-over .lane-count { color: var(--danger); }
+.wip-over .lane-count { font-weight: 650; }
+.wip-over .gauge .tick { background: var(--danger); }
+.wip-over .lane-status { color: var(--danger); font-weight: 600; }
+
+.lane-cards {
+  flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 8px;
+  padding: 2px 10px 14px;
+}
+.lane-empty { padding: 14px 4px; color: var(--muted); font-size: 13px; }
+.lane-cards:has(.drop-slot) .lane-empty { display: none; }
+
+/* The point in the lane where the limit was passed. */
+.limit-line { display: flex; align-items: center; gap: 6px; flex: none; color: var(--danger); font-size: 11.5px; font-weight: 600; }
+.limit-line::after { content: ""; flex: 1; border-top: 1.5px dashed var(--danger); }
+body.is-dragging .limit-line { display: none; }
+
+.card {
+  position: relative; flex: none; display: flex; flex-direction: column; gap: 5px; padding: 8px 10px 8px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  cursor: grab; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;
+}
+.card:hover { border-color: var(--line-strong); }
+.card.is-open { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.wip-over .card { border-color: var(--danger-line); }
+.wip-over .card.is-open { border-color: var(--accent); }
+
+.card-top { display: flex; align-items: center; gap: 6px; min-height: 16px; padding-right: 20px; }
+.card-open {
+  padding: 0; background: none; border: 0; text-align: left; font-size: 13.5px; font-weight: 500; line-height: 1.32;
+  overflow-wrap: anywhere; cursor: inherit;
+}
+.card-open::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius); }
+.card-open:focus-visible { outline: none; }
+.card-open:focus-visible::after { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.card-menu { position: absolute; z-index: 1; top: 3px; right: 3px; width: 24px; height: 24px; opacity: 0; }
+.card:hover .card-menu, .card-menu:focus-visible, .card-open:focus-visible ~ .card-menu { opacity: 1; }
+@media (hover: none) { .card-menu { opacity: 1; width: 32px; height: 32px; top: 0; right: 0; } }
+
+.card-labels { display: flex; flex-wrap: wrap; gap: 2px 9px; }
+.card-meta { display: flex; align-items: center; gap: 9px; min-height: 22px; }
+.card-meta-end { margin-left: auto; display: inline-flex; }
+
+.add-lane {
+  flex: 0 0 34px; align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  width: 34px; height: 34px; margin: 8px 8px 0; background: var(--surface); border: 1px dashed var(--line-strong); border-radius: var(--radius);
+  color: var(--muted); cursor: pointer;
+}
+.add-lane:hover { color: var(--accent-text); border-color: var(--accent); }
+.add-lane-text { display: none; }
+
+/* Drag states */
+body.is-dragging { cursor: grabbing; user-select: none; -webkit-user-select: none; }
+body.is-dragging .card, body.is-dragging .lane-head { cursor: grabbing; }
+.drag-source { display: none !important; }
+.drag-ghost {
+  position: fixed; left: 0; top: 0; z-index: 400; margin: 0; pointer-events: none;
+  background: var(--surface); border: 1px solid var(--accent); box-shadow: var(--shadow-lift); overflow: hidden; will-change: transform;
+}
+.lane.drag-ghost { border-radius: var(--radius); }
+.lane.drag-ghost.wip-over { background: var(--surface); }
+.drop-slot { flex: none; background: var(--accent-soft); border: 1.5px dashed var(--accent); border-radius: var(--radius); list-style: none; }
+.lane-slot { flex: 0 0 auto; background: var(--accent-soft); border: 1.5px dashed var(--accent); border-radius: var(--radius); margin: 6px 3px; }
+
+@media (max-width: 640px) {
+  .board { scroll-snap-type: x proximity; }
+  body.is-dragging .board { scroll-snap-type: none; }
+  .lane { flex: 0 0 min(82vw, 330px); max-width: none; scroll-snap-align: start; }
+  .lane-actions .icon-btn { width: 34px; height: 34px; }
+  .lane-head { padding-top: 4px; padding-bottom: 6px; }
+  .card { padding: 10px 12px; }
+  .add-lane { flex: 0 0 auto; width: auto; height: 38px; padding: 0 12px; margin: 8px 12px 0; }
+  .add-lane-text { display: inline; white-space: nowrap; }
+}

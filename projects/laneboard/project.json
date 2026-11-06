@@ -1,0 +1,24 @@
+{
+  "slug": "laneboard",
+  "name": "Laneboard",
+  "category": "Productivity",
+  "accent": "#1767e5",
+  "tagline": "Project board for small teams to plan and track work",
+  "description": "For small teams that want to see what everyone is working on and notice when too much is in progress. It keeps several projects on custom lanes with work-in-progress limits, and every move or delete can be undone.",
+  "scope": [
+    "Lanes with limits and drag and drop",
+    "Card details, checklists and activity",
+    "Calendar, table and archive views",
+    "Filters, undo, JSON export and import"
+  ],
+  "features": [
+    "Pointer-event drag and drop for cards and lanes with mouse or touch, plus a keyboard Move to menu",
+    "Work-in-progress limits with a tick gauge, an over-limit lane state and a line drawn where the limit was passed",
+    "Card details with assignee, labels, priority, due date, checklist progress and a timestamped activity log",
+    "Filters that combine text, assignee, label and overdue, and keep hidden cards in place when you drag",
+    "Month calendar of due dates, sortable table view, and an archive with restore",
+    "Undo for moves, deletes and archiving, plus validated JSON export and import"
+  ],
+  "stack": ["JavaScript", "HTML", "CSS", "Pointer Events", "localStorage"],
+  "engineering": "Drag and drop is written directly on pointer events, and moves are stored as 'insert before this card' so a drop under an active filter lands correctly among cards the viewer can't see, with each move undone by an inverse operation rather than a snapshot."
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Billcraft: invoicing for freelancers and small studios</title>
+  <meta name="description" content="Create invoices and quotes, record partial payments, track aged receivables and print clean A4 or Letter documents. Runs in the browser with no account.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f5e5b'/%3E%3Cpath d='M10 8h12M10 13h12M10 18h7M10 24h12' stroke='%23fff' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/views.css">
+  <link rel="stylesheet" href="css/paper.css">
+  <link rel="stylesheet" href="css/print.css">
+  <style id="page-size">@page { size: A4; margin: 14mm; }</style>
+  <script src="js/core/theme.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <div id="modal-root"></div>
+  <div id="toast-root" role="status" aria-live="polite"></div>
+
+  <script src="js/core/dom.js"></script>
+  <script src="js/core/dates.js"></script>
+  <script src="js/core/money.js"></script>
+  <script src="js/core/calc.js"></script>
+  <script src="js/core/csv.js"></script>
+  <script src="js/data/seed.js"></script>
+  <script src="js/data/schema.js"></script>
+  <script src="js/data/store.js"></script>
+  <script src="js/data/exporter.js"></script>
+  <script src="js/ui/widgets.js"></script>
+  <script src="js/ui/paper.js"></script>
+  <script src="js/views/dashboard.js"></script>
+  <script src="js/views/document-list.js"></script>
+  <script src="js/views/document-detail.js"></script>
+  <script src="js/views/line-editor.js"></script>
+  <script src="js/views/document-editor.js"></script>
+  <script src="js/views/clients.js"></script>
+  <script src="js/views/client-detail.js"></script>
+  <script src="js/views/catalogue.js"></script>
+  <script src="js/views/settings.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

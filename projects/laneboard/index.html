@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laneboard: project board for small teams</title>
+  <meta name="description" content="Plan and track work across projects with custom lanes, work-in-progress limits, a calendar, a sortable table and full undo.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231767e5'/%3E%3Cpath d='M9 8v16M16 8v10M23 8v13' stroke='white' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/board.css">
+  <link rel="stylesheet" href="css/views.css">
+  <link rel="stylesheet" href="css/panel.css">
+  <link rel="stylesheet" href="css/overlays.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="rail" id="rail" aria-label="Workspace"></aside>
+    <div class="rail-scrim" id="rail-scrim"></div>
+    <main class="main">
+      <header class="topbar" id="topbar"></header>
+      <div class="filters" id="filters" role="search" aria-label="Filter cards"></div>
+      <div class="workspace">
+        <div class="view" id="view"></div>
+        <aside class="panel" id="panel" role="dialog" aria-label="Card details" tabindex="-1" hidden></aside>
+      </div>
+    </main>
+  </div>
+  <div id="menu-root"></div>
+  <div id="modal-root"></div>
+  <div class="toast-region" id="toasts" role="status" aria-live="polite"></div>
+
+  <script src="js/dates.js"></script>
+  <script src="js/model.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/undo.js"></script>
+  <script src="js/actions.js"></script>
+  <script src="js/ui/dom.js"></script>
+  <script src="js/ui/parts.js"></script>
+  <script src="js/ui/toast.js"></script>
+  <script src="js/ui/modal.js"></script>
+  <script src="js/ui/menu.js"></script>
+  <script src="js/ui/forms.js"></script>
+  <script src="js/ui/editors.js"></script>
+  <script src="js/ui/drag.js"></script>
+  <script src="js/ui/board.js"></script>
+  <script src="js/ui/calendar.js"></script>
+  <script src="js/ui/table.js"></script>
+  <script src="js/ui/archive.js"></script>
+  <script src="js/ui/panel.js"></script>
+  <script src="js/ui/rail.js"></script>
+  <script src="js/ui/topbar.js"></script>
+  <script src="js/ui/filterbar.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

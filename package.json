@@ -1,0 +1,16 @@
+{
+  "name": "grehard-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "One-page portfolio of 12 working web apps, with 1-minute demo videos.",
+  "scripts": {
+    "start": "node tools/serve.js",
+    "demo": "node tools/demo.js",
+    "test": "node tools/test.js --all"
+  },
+  "devDependencies": {
+    "@fontsource-variable/instrument-sans": "^5.1.0",
+    "ffmpeg-static": "^5.2.0",
+    "playwright-core": "^1.48.2"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "coinpath",
+  "name": "Coinpath",
+  "category": "Finance",
+  "accent": "#0e5a3c",
+  "tagline": "A personal finance tracker for accounts, budgets and cash flow",
+  "description": "Coinpath is for people who want to see where their money goes and stay within a monthly budget. It keeps accounts, transactions, budgets and recurring bills in one place, in the browser, with no sign-up.",
+  "scope": [
+    "Accounts, transfers and running balances",
+    "Monthly category budgets",
+    "Recurring transactions with catch-up",
+    "CSV import with duplicate detection"
+  ],
+  "features": [
+    "Running balances per account, computed in date order, with transfers excluded from income and spending",
+    "Monthly category budgets with progress, over-budget state and limits that keep past months intact",
+    "Weekly or monthly recurring rules that post on load and catch up every missed period",
+    "Hand-built SVG spending-by-category and 12-month cash flow charts with hover values",
+    "CSV import with column mapping, date format detection and duplicate detection",
+    "CSV and JSON export, JSON restore, and a choice of 12 display currencies"
+  ],
+  "stack": ["JavaScript", "SVG", "HTML", "CSS", "localStorage"],
+  "engineering": "All money is integer cents, parsed from digit strings without floats, and recurring catch-up steps from a stored anchor day so a rule on the 31st clamps to February and returns to the 31st."
+}

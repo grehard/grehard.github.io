@@ -1,0 +1,23 @@
+/* A grocery list that fits on paper: no app chrome, black on white, tick boxes kept. */
+@media print {
+  :root, :root[data-theme="dark"], :root:not([data-theme="light"]) {
+    --paper: #fff; --leaf: #fff; --tint: #fff; --ink: #000; --ink-2: #444; --rule: #bbb; --rule-strong: #666;
+    --accent: #000; --olive: #333; color-scheme: light;
+  }
+  @page { margin: 14mm; }
+  body { background: #fff; font-size: 11pt; }
+  .app-header, .no-print, .toasts, .modal-root, .timer-pill { display: none !important; }
+  .print-only { display: inline; }
+  .view { max-width: none; padding: 0; }
+  .view-head { margin-bottom: 4pt; }
+  h1 { font-size: 18pt; }
+  .grocery-summary { margin: 0 0 10pt; font-size: 10pt; }
+  .aisles { columns: 2; column-gap: 12mm; }
+  .aisle { padding-bottom: 8pt; }
+  .aisle h2 { font-size: 12pt; padding-bottom: 2pt; border-bottom: 1pt solid #000; }
+  .grocery-item { padding: 2pt 0; gap: 6pt; border-bottom: 0.5pt solid #bbb; break-inside: avoid; }
+  .grocery-source, .grocery-pantry { font-size: 8.5pt; }
+  .is-checked .grocery-text label { color: #444; }
+  input[type="checkbox"] { width: 11pt; height: 11pt; accent-color: #000; }
+  a { text-decoration: none; }
+}

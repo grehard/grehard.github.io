@@ -1,0 +1,38 @@
+/* Grocery list and pantry: both read as lists by aisle. */
+.grocery-summary { color: var(--ink-2); margin: -8px 0 14px; font-variant-numeric: tabular-nums; }
+.manual-form { display: flex; align-items: flex-start; gap: 8px; max-width: 460px; flex: 1 1 320px; }
+.manual-form .field { flex: 1; }
+.manual-form .btn { margin-top: 24px; }
+.groceries-view > .manual-form { margin-bottom: 18px; }
+
+.aisles { columns: 3 300px; column-gap: 34px; }
+.aisle { break-inside: avoid; padding-bottom: 18px; }
+.aisle h2 { font-size: 18px; padding-bottom: 5px; border-bottom: 2px solid var(--ink); }
+
+.grocery-item { display: flex; align-items: flex-start; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--rule); }
+.grocery-item input { margin-top: 2px; }
+.grocery-text { flex: 1; min-width: 0; }
+.grocery-text label { display: block; cursor: pointer; line-height: 1.35; }
+.grocery-amount { font-weight: 600; font-variant-numeric: tabular-nums; }
+.grocery-source { font-size: 12.5px; color: var(--ink-2); line-height: 1.35; }
+.grocery-pantry { font-size: 12.5px; color: var(--olive); line-height: 1.35; }
+.is-checked .grocery-text label { text-decoration: line-through; color: var(--ink-2); }
+.is-checked .grocery-amount { font-weight: 400; }
+.item-actions { display: flex; flex: none; }
+
+.covered { margin-top: 10px; padding-top: 12px; border-top: 1px solid var(--rule-strong); }
+.covered summary { cursor: pointer; font: 600 16px var(--serif); padding: 4px 0; }
+.covered-list { columns: 2 340px; column-gap: 34px; margin-top: 6px; }
+.covered-list li { break-inside: avoid; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0 12px; padding: 5px 0; border-bottom: 1px solid var(--rule); }
+
+.pantry-tools { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 12px 24px; margin-bottom: 20px; }
+.pantry-search { flex: 0 1 280px; }
+.pantry-row { display: flex; align-items: center; gap: 12px; padding: 3px 0; min-height: 40px; border-bottom: 1px solid var(--rule); }
+.pantry-name { flex: 1; min-width: 0; font-family: var(--serif); font-size: 15.5px; }
+.pantry-stock { font-weight: 600; font-variant-numeric: tabular-nums; font-size: 14px; text-align: right; }
+.pantry-stock.staple { font-weight: 400; color: var(--olive); font-size: 13px; }
+
+@media (max-width: 860px) {
+  .manual-form { flex-basis: 100%; max-width: none; }
+  .pantry-search { flex: 1 1 100%; }
+}

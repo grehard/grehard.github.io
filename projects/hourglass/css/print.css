@@ -1,0 +1,21 @@
+/* Printing leaves only the timesheet, in black on white whatever the theme. */
+@media print {
+  :root, [data-theme="dark"] { color-scheme: light; }
+  html, body { background: #ffffff !important; color: #000000; padding: 0 !important; }
+  .app-header, .timerbar, .toasts, .skip-link, .no-print, #modal-root, #chart-tip { display: none !important; }
+  .view { padding: 0; max-width: none; }
+  .print-view { max-width: none; }
+  .sheet { border: 0; padding: 0; border-radius: 0; }
+  .sheet-table { min-width: 0; }
+  .sheet-table-wrap { overflow: visible; }
+  .sheet-table thead { display: table-header-group; }
+  .sheet-line, .sheet-subtotal, .sheet-sign, .sheet-totals { break-inside: avoid; }
+  .sheet-day { break-after: avoid; }
+
+  /* Other pages can be printed too: keep them readable, but drop their on-screen scrollers. */
+  .tl-panel, .entries-panel, .tl-scroll { height: auto; overflow: visible; }
+  .ts-wrap, .table-wrap { overflow: visible; }
+  .view-head .btn, .view-head .head-actions, .filters, .icon-btn { display: none !important; }
+
+  @page { margin: 16mm 14mm; }
+}

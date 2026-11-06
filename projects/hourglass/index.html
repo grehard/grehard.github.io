@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hourglass: time tracking and timesheets</title>
+<meta name="description" content="Time tracking and timesheets for freelancers and consultants: timer, focus sessions, week grid, budgets, reports and printable timesheets. Runs in your browser.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23C2470A'/%3E%3Cpath d='M10 7h12M10 25h12M11 7c0 5 10 7 10 18M21 7c0 5-10 7-10 18' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/views.css">
+<link rel="stylesheet" href="css/print.css">
+<script src="js/core/theme.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#view">Skip to content</a>
+<header class="app-header">
+  <div class="brand" aria-label="Hourglass">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12M6 21h12M7 3c0 5 10 7 10 18M17 3c0 5-10 7-10 18"/></svg>
+    <span>Hourglass</span>
+  </div>
+  <nav id="nav" class="app-nav" aria-label="Main"></nav>
+  <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch to dark theme" title="Switch theme"></button>
+</header>
+<section id="timerbar" class="timerbar" aria-label="Timer"></section>
+<main id="view" class="view" tabindex="-1"></main>
+<div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+<div id="modal-root"></div>
+<div id="chart-tip" class="chart-tip" hidden></div>
+
+<script src="js/core/dom.js"></script>
+<script src="js/core/time.js"></script>
+<script src="js/core/calc.js"></script>
+<script src="js/core/seed.js"></script>
+<script src="js/core/store.js"></script>
+<script src="js/core/budget.js"></script>
+<script src="js/core/report.js"></script>
+<script src="js/core/export.js"></script>
+<script src="js/ui/feedback.js"></script>
+<script src="js/ui/controls.js"></script>
+<script src="js/features/audio.js"></script>
+<script src="js/features/timer.js"></script>
+<script src="js/features/focus.js"></script>
+<script src="js/features/timerbar.js"></script>
+<script src="js/features/entry-form.js"></script>
+<script src="js/features/split-form.js"></script>
+<script src="js/views/charts.js"></script>
+<script src="js/views/timeline.js"></script>
+<script src="js/views/day.js"></script>
+<script src="js/views/week.js"></script>
+<script src="js/views/focus.js"></script>
+<script src="js/views/reports.js"></script>
+<script src="js/views/manage.js"></script>
+<script src="js/views/print-sheet.js"></script>
+<script src="js/views/settings.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
