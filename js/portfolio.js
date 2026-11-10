@@ -17,6 +17,11 @@
     });
   }
 
+  // "Save CV as PDF" opens the browser's print dialog; the print stylesheet lays out a clean CV.
+  document.querySelectorAll('[data-print]').forEach((button) => {
+    button.addEventListener('click', () => window.print());
+  });
+
   const players = Array.from(document.querySelectorAll('.player'));
 
   function pauseVideosExcept(current) {

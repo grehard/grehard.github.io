@@ -68,6 +68,13 @@ function replaceBetween(html, name, content) {
 const file = path.join(ROOT, 'index.html');
 let html = fs.readFileSync(file, 'utf8');
 html = replaceBetween(html, 'index', indexList);
+const printList = `
+      <ol>${projects.map((p) => `
+        <li><strong>${esc(p.name)}</strong>: ${esc(p.tagline)}<span>${p.stack.map(esc).join(', ')}</span></li>`).join('')}
+      </ol>
+      <p>Live demos and source: grehard.github.io and github.com/${GITHUB_USER}</p>
+      `;
+html = replaceBetween(html, 'printlist', printList);
 html = replaceBetween(html, 'projects', projects.map((p, i) => projectRow(p, i)).join('\n') + '\n      ');
 fs.writeFileSync(file, html);
 console.log(`index.html: ${projects.length} projects`);
